@@ -1,0 +1,43 @@
+<!-- Andre luiz dos santos rodrigues, 13/11/2026 -->
+
+<!-- Exemplo de conectividade com JS externo. -->
+
+<!-- Declara ao navegador que este documento segue o padrão HTML5 -->
+<!DOCTYPE html>
+
+<!-- Tag raiz que envolve toda a página e define o idioma principal como Português do Brasil -->
+<html lang="pt-br">
+
+<!-- contém configurações invisíveis que o navegador precisa ler antes de montar a tela -->
+<head>
+    
+    <!-- Define a codificação de caracteres (UTF-8) para exibir corretamente acentos e ç -->
+    <meta charset="utf-8">
+    
+    <!-- Define o título que aparece na aba do navegador -->
+    <title>Exemplo de Interatividade</title>
+   
+    <!-- Conecta o arquivo externo 'script.js' e usa 'defer' para executá-lo melhor. -->
+    <script src="script.js" defer></script>
+    
+    <!-- Fecha a seção de configurações técnicas -->
+</head>
+
+<!-- Corpo da página: contém todo o conteúdo visual que aparece na tela para o usuário -->
+<body>
+    
+    <!-- Cria o título principal (nível 1) visível na página --> 
+    <h1>Bem-vindo ao meu site</h1>
+    
+    <!-- Cria um botão clicável com o identificador único, para ser encontrado pelo js. -->
+    <button id="meuBotao">Clique-me</button>
+    
+    <!-- Cria um parágrafo de texto com o identificador único, para ser encontrado pelo js. --> 
+    <p id="meuParagrafo">Texto original</p>
+
+    <!-- Fecha a área de conteúdo visível -->
+</body>
+
+<!-- Encerra o documento HTML -->
+</html>
+

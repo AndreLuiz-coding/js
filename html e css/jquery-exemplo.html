@@ -1,0 +1,52 @@
+<!-- Andre luiz dos santos rodrigues, 14/11/2026 -->
+
+<!-- Exemplo da biblioteca jQuery do JS, JS interno.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Básico de jQuery</title>
+  
+  <!-- Script 1: Carrega a biblioteca jQuery, tem que ser separado da tag <script> de ação. -->
+  <script src="jquery-4.0.0.min.js"></script>
+
+  <!-- Script 2: Primeiro comportamento(ação) -->
+  <script>
+    // 2. Garante que o código só rode após o HTML carregar, muito importante!
+    $(function () {
+      
+      // Pinta o fundo do cabeçalho de preto, com o metodo .css()!!
+      $("#cabecalho").css({
+        "background-color": "#000000",
+        "color": "#ffffff",
+        "padding": "20px"
+      });
+
+      // Ação 1: Muda o texto do parágrafo ao clicar no botão
+      $("#btnTexto").on("click", function () { // .on() serve para vigiar um acontecimento "ação" feito pelo usuário.
+        $("#mensagem").text("O jQuery alterou este texto automaticamente!"); //.text() controla exclusivamente o texto puro.
+      });
+
+      // Ação 2: Esconde ou mostra o cabeçalho com efeito suave
+      $("#btnAlternar").on("click", function () {  // .on() serve para vigiar um acontecimento "ação" feito pelo usuário.
+        $("#cabecalho").slideToggle(400); // .slideToggle(400), Desliza o cabeçalho para cima ou para baixo em 0,4s
+      });
+
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Elementos HTML que serão controlados pelo jQuery -->
+  <header id="cabecalho">
+    <h1>Meu Cabeçalho Controlado pelo jQuery</h1>
+  </header>
+
+  <p id="mensagem">Texto original da página.</p>
+
+  <button id="btnTexto">Mudar Texto</button>
+  <button id="btnAlternar">Esconder / Mostrar Cabeçalho</button>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Andre luiz dos santos rodrigues, 13/11/2026 -->
+
+<!-- Exemplo de JS interno,integrado ao HTML E CSS(interno). -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mudar Cor da Página</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      transition: background-color 0.3s;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Clique no botão para deixar a página azul</h1>
+  <button id="btnAzul">Deixar Página Azul</button>
+
+  <script>
+    // Seleciona o botão pelo ID e adiciona um ouvinte para o evento de clique
+    document.getElementById("btnAzul").addEventListener("click", function() {
+      
+      // Altera a cor de fundo (backgroundColor) do corpo da página (body) para azul
+      document.body.style.backgroundColor = "blue";
+      
+      // Muda a cor do texto do título para branco para facilitar a leitura
+      document.getElementById("titulo").style.color = "white";
+    });
+  </script>
+
+</body>
+</html>

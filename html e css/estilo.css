@@ -1,0 +1,39 @@
+/* Andre luiz dos santos rodrigues, 09/11/2026 */
+
+/* O asterisco é o Seletor Universal. Aplica as regras em TUDO na página. */
+* {
+    margin: 0; /* Zera a margem externa padrão dos elementos */
+    padding: 0; /* Zera o espaçamento interno padrão dos elementos */
+}
+
+/* Seletor de Tag: Aplica as regras na tag <body> (o corpo inteiro da página) */
+body {
+    background-color: black; /* Altera a cor de fundo para preto */
+}
+
+/* Seletor de Tag: Aplica a regra a todos os parágrafos <p> genéricos */
+p {
+    color: green;  /* Altera a cor do texto para verde */
+}
+
+/* Seletor de Classe: Aplica apenas nos elementos que têm class="azul" */
+.azul {
+    color: cyan; /* azul ciano */ /* Altera a cor do texto para azul ciano */
+}
+
+/* Seletor de ID: Aplica apenas no elemento exclusivo que tem id="vermelho" */
+#vermelho {
+    color: red; /* Altera a cor do texto para vermelho */
+}
+
+/* Estilizando a nossa nova dimensão */
+.caixa-teste {
+    /* 1. Definindo as dimensões (tamanho) */
+    width: 200px;         /* Largura da caixa */
+    height: 200px;        /* Altura da caixa (como são iguais, vira um quadrado!) */
+    
+    /* 2. Dando uma cor e centralizando para conseguirmos enxergar na tela */
+    background-color: yellow; /* Fundo amarelo para destacar bem no fundo escuro */
+    margin: 30px auto;        /* Centraliza a caixa na tela e dá um espaço no topo */
+    border-radius: 10px;      /* Um bônus: arredonda os cantinhos da caixa */
+}

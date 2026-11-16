@@ -1,0 +1,143 @@
+<!-- Andre luiz dos santos rodrigues, 11/11/2026 -->
+
+<!-- Exemplo tags semântica em html, e css interno. -->
+
+<!-- Define que este arquivo usa a versão HTML5 -->
+<!DOCTYPE html>
+
+<!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+<html lang="pt-BR">
+
+<!-- Inicia a cabeça do documento (configurações invisíveis na tela) -->
+<head>
+  <!-- Permite o uso de acentos e caracteres especiais (ç, ã, é) -->
+  <meta charset="UTF-8">
+  
+  <!-- Define o título que aparece na aba do navegador -->
+  <title>Página com CSS Interno</title>
+
+  <!-- Inicia o bloco de estilos CSS internos -->
+  <style>
+    /* Estiliza toda a página (corpo) */
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte do texto */
+      margin: 0; /* Remove as margens padrão das bordas da tela */
+    }
+
+    /* Estiliza o cabeçalho semântico */
+    header {
+      background-color: #333; /* Define a cor de fundo como cinza escuro */
+      color: white; /* Define a cor do texto como branco */
+      padding: 20px; /* Cria um espaçamento interno de 20 pixels */
+      text-align: center; /* Centraliza o texto horizontalmente */
+    }
+
+    /* Estiliza o menu de navegação semântico */
+    nav {
+      background-color: #555; /* Define o fundo como cinza médio */
+      color: white; /* Define a cor do texto como branco */
+      padding: 10px; /* Cria um espaçamento interno de 10 pixels */
+      text-align: center; /* Centraliza os itens do menu */
+    }
+
+    /* Estiliza a área de conteúdo principal semântica */
+    main {
+      padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+    }
+
+    /* Estiliza uma seção dentro do conteúdo principal */
+    section {
+      background-color: #f4f4f4; /* Define um fundo cinza bem claro */
+      padding: 15px; /* Cria um espaçamento interno de 15 pixels */
+      border-radius: 5px; /* Arredonda levemente os cantos da caixa */
+      overflow: auto; /* Garante que a seção envolva toda a altura da imagem flutuante */
+    }
+
+    /* Estiliza o bloco semântico da imagem */
+    figure {
+      float: left; /* Faz a imagem flutuar à esquerda e o texto contornar à direita */
+      margin: 0 20px 10px 0; /* Cria espaço: 0 topo, 20px direita, 10px baixo, 0 esquerda */
+      background-color: white; /* Fundo branco estilo moldura */
+      padding: 8px; /* Espaçamento interno da moldura */
+      border: 1px solid #ccc; /* Borda fina cinza ao redor da moldura */
+      border-radius: 4px; /* Cantos levemente arredondados */
+      max-width: 250px; /* Limita a largura máxima da caixa da imagem */
+    }
+
+    /* Garante que a imagem ocupe 100% da largura do bloco figure */
+    figure img {
+      width: 100%; /* Ajusta a largura da imagem ao tamanho da caixa figure */
+      display: block; /* Remove um pequeno espaço em branco padrão abaixo da imagem */
+    }
+
+    /* Estiliza a legenda da imagem */
+    figcaption {
+      font-size: 12px; /* Deixa o texto da legenda menor */
+      color: #555; /* Cor cinza escuro para diferenciar do texto principal */
+      text-align: center; /* Centraliza o texto da legenda */
+      margin-top: 6px; /* Dá um pequeno espaço entre a imagem e a legenda */
+    }
+
+    /* Estiliza o rodapé semântico */
+    footer {
+      background-color: #333; /* Define o fundo como cinza escuro */
+      color: white; /* Define a cor do texto como branco */
+      text-align: center; /* Centraliza o texto */
+      padding: 10px; /* Cria um espaçamento interno de 10 pixels */
+      margin-top: 20px; /* Cria um espaço externo acima do rodapé */
+    }
+  </style>
+  <!-- Fecha o bloco de estilos CSS internos -->
+
+<!-- Fecha a cabeça do documento -->
+</head>
+
+<!-- Inicia o corpo do documento (tudo que aparece visível na tela) -->
+<body>
+
+  <!-- Cria o cabeçalho principal da página -->
+  <header>
+    <!-- Define o título principal da página -->
+    <h1>Meu Site Semântico</h1>
+  </header>
+
+  <!-- Cria a barra de navegação para os links do site -->
+  <nav>
+    <!-- Texto de exemplo representando os links do menu -->
+    Início | Sobre | Contato
+  </nav>
+
+  <!-- Delimita o conteúdo principal e mais importante da página -->
+  <main>
+    <!-- Cria uma seção temática dentro do conteúdo principal -->
+    <section>
+      <!-- Define um subtítulo para esta seção -->
+      <h2>Bem-vindo</h2>
+      
+      
+      <!-- Inicia o container semântico para imagem e legenda -->
+      <figure>
+        <!-- Exibe a imagem (usando uma imagem de teste automática de 250x150 pixels) -->
+        <img src="Html+Css.avif" alt="Logotipos do HTML5 e CSS3">
+      
+        <!-- Define a legenda semântica da imagem -->
+        <figcaption>Figura 1: Exemplo de imagem com legenda usando HTML5.</figcaption>
+      </figure>
+      
+        <!-- Parágrafos que vão contornar a imagem flutuante -->
+      <p>Esta página mistura tags semânticas do HTML5 com CSS interno.</p>
+      <p>O uso de figure e figcaption melhora a acessibilidade.</p>
+    </section>
+  </main>
+
+  <!-- Cria o rodapé na parte inferior da página -->
+  <footer>
+    <!-- Parágrafo com o aviso de direitos autorais -->
+    <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+
+<!-- Fecha o corpo do documento -->
+</body>
+
+<!-- Fecha o documento HTML -->
+</html>
