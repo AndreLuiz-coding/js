@@ -1,4 +1,4 @@
-// Andre luiz dos santos rodrigues, 16/11/2026
+// Andre luiz dos santos rodrigues, 22/11/2026
 
 // Importa novos arquivo aqui
 import CardProduto from './CardProduto';
