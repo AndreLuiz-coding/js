@@ -4,6 +4,7 @@
 import CardProduto from './CardProduto';
 import PraticaEventos from './PraticaEventos'; 
 import Enquete from './Enquete';
+import Socialismo from './Socialismo';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <PraticaEventos />
       {/* 2. Desenha a peça inteira da Enquete na tela, exatamente neste lugar */}
       <Enquete />
+      
+      <hr style={{ margin: '30px 0' }} />
+      <Socialismo />
 
     </div>
   );

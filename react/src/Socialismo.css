@@ -1,0 +1,64 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff; /* Fundo branco sólido para dar contraste */
+  color: #1f2937;            /* Texto bem escuro e legível */
+  color: #222;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #b91c1c;
+  padding-bottom: 1rem;
+}
+
+.cabecalho h1 {
+  color: #991b1b;
+  margin-bottom: 0.5rem;
+}
+
+.imagem-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.imagem-box img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.secao-conceitos h2 {
+  color: #991b1b;
+  margin-bottom: 0.5rem;
+}
+
+.secao-conceitos h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  background-color: #f9fafb;
+  border-left: 4px solid #b91c1c;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h4 {
+  margin-top: 0;
+  color: #7f1d1d;
+}
